@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Curious-Connect/curious-connect-backend/issues"
   },
-  "homepage": "https://github.com/Curious-Connect/curious-connect-backend#readme"
+  "homepage": "https://github.com/Curious-Connect/curious-connect-backend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.3.1"
+  }
 }

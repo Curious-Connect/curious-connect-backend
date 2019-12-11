@@ -1,11 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-
-router.get("/", function(req,res) {
-    res.send("connected")
-})
-
 router.post("/send", (req, res, next) => {
     const { name, email, message } = req.body;
 

@@ -4,6 +4,8 @@ const router = express.Router();
 router.post("/send", (req, res, next) => {
     const { name, email, message } = req.body;
 
+    debugger
+
     let mail = {
         from: email,
         to: process.env.EMAIL,
@@ -13,10 +15,12 @@ router.post("/send", (req, res, next) => {
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {
+            debugger
             res.json({
                 message: "Fail to send email"
             })
         } else {
+            debugger
             res.json({
                 message: "Email sent."
             })
